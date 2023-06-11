@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boostrap 導入程式 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    
+    <title>購物車</title>
+    <link rel="icon" href="image/icon.ico">
+    <link rel="stylesheet" href="css/shopping.css"> <!--連結CSS-->
+</head>
+<body>
+    <header>
+        <div class="logo"> <!--LOGO-->
+            <a href="index.html"><img src="image/logo.png" style="width: 100px; height: 100px;"></a>
+        </div>
+        <nav>
+            <a href="loginindex.html">首頁</a>
+            <a href="store2.html">商品頁面</a>
+            <a href="board2.html">留言板</a>
+            <a href="aboutus2.html">關於我們</a>
+            <a href="login.html">登出會員</a>
+            <a href="profile.html">修改會員資料</a>
+            <a href="shopping.html">🛒購物車</a>
+        </nav>
+    </header>
+    <section>
+        <h1>購物車  🛒</h1>
+        <div class="block"><!--商品1-->
+            <img src="https://picsum.photos/200/200?random=1" alt="Image 1" class="itemimg"  >
+            <div class="card1">
+                <p class="text">品名:<br>
+                    價格:    <br>  
+                        
+                        <div class="">數量:
+                        <input type="button" value="-" class="btn1" onclick="minus(0)"></input>
+                        <input type="text" value="1" size="3" class="input_num">
+                        <input type="button" value="+" class="btn1" onclick="add(0)"></input>
+                
+                        <input type="button" value="刪除" class="delete"></input>
+                    </div>
+                </p>
+            </div>
+        </div>    
+        
+
+
+        <div class="block"><!--商品2-->
+            <img src="https://picsum.photos/200/200?random=1" alt="Image 1" class="itemimg"  >
+            <div class="card1">
+                <p class="text">品名:<br>
+                    價格:    <br>  
+                        
+                        <div class="">數量:
+                        <input type="button" value="-" class="btn1" onclick="minus(1)"></input>
+                        <input type="text" value="1" size="3" class="input_num">
+                        <input type="button" value="+" class="btn1" onclick="add(1)"></input>
+                
+                        <input type="button" value="刪除" class="delete"></input>
+                    </div>
+                </p>
+            </div>
+        </div> 
+                    
+        <div class="block"><!--商品3-->
+            <img src="https://picsum.photos/200/200?random=1" alt="Image 1" class="itemimg"  >
+            <div class="card1">
+                <p class="text">品名:<br>
+                    價格:    <br>  
+                    <div class="number">
+                        數量:
+                        <input type="button" value="-" class="btn1" onclick="minus(2)"></input>
+                        <input type="text" value="1" size="3" class="input_num">
+                        <input type="button" value="+" class="btn1" onclick="add(2)"></input>
+                        <input type="button" value="刪除" class="delete"></input>
+                    </div>
+                </p>
+            </div> 
+        </div>
+        
+        <!--總計-->
+        <div class="total">
+           <div class="price">總計:$123456789</div>
+        </div>      
+        
+        <!--結帳按鈕--> 
+        <div class="block">
+            <!--<button type="button" class="buy" onclick="checkclick()">結帳去</button>-->
+            <input type="button" data-bs-toggle="modal" data-bs-target="#loginModal" value="結帳去"class="buy"></input>
+        </div>        
+ 
+    </section>
+    
+    
+   
+
+    <footer>
+        <p class="pagetop"><a href="#top">▲回TOP</a></p> <!--TOP傳送門-->
+        <p class="copyright">本文瀏覽次數：123456<br> Copyright © 2023。本網站僅為作業之用，如有侵權敬請告知。</p>
+    </footer>
+
+    <!-- boostrap跳出視窗內容 -->
+
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <!-- Header -->
+            <div class="modal-header">
+                <h3>填寫購買資訊</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Body -->
+            <div class="modal-body">
+                <!-- 個資表單 -->
+                <form>
+                    <!-- 內容欄位 -->
+                    <div class="form-group">
+                        <input type="text" class="account form-control" placeholder="收件人姓名">
+                        <input type="text" class="account form-control" placeholder="收件地址">
+                        <input type="text" class="account form-control" placeholder="手機">
+                        <input type="email" class="account form-control" placeholder="Email">
+                        <div class="paytxt">選擇付款方式:</div>
+                        <select name="" id="" class="account form-control">
+                            <option value="creditcard">信用卡</option>
+                            <option value="cash">貨到付款</option>
+                            <option value="atm">ATM付款</option>
+                        </select>
+                    
+                        
+                    </div>
+                    
+                    <!-- 送出按鈕 -->
+                    <a href="shopping.html"><!--送出後清空購物車-->
+                    <button type="button" class="btn btn-info" onclick="checkclick()"> 確認送出 </button>
+                    </a>
+                </form>
+            </div>
+            <!-- Footer -->
+            <div class="modal-footer">
+                <div class="signup">
+                    <span>Violet Cafe</span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function minus(ctn_num){
+            var num = Number(document.getElementsByClassName("input_num")[ctn_num].value);
+            if(num > 1){
+                document.getElementsByClassName("input_num")[ctn_num].value = num-1;
+            }
+        }
+        function add(ctn_num){
+            var num = Number(document.getElementsByClassName("input_num")[ctn_num].value);
+            if(num < 100){
+                document.getElementsByClassName("input_num")[ctn_num].value = num+1;
+            }
+        }
+
+        function checkclick(){
+             window.alert("您的訂單已完成");
+        }
+
+    </script>
+    
+</body>
+</html>

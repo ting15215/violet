@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violet Cafe</title>
+    <link rel="icon" href="image/icon.ico">
+    <link rel="stylesheet" href="css/store.css"> <!--連結CSS-->
+</head>
+<html>
+<body>
+    <header>
+        <div class="logo"> <!--LOGO-->
+            <a href="index.html"><img src="image/logo.png" style="width: 100px; height: 100px;"></a>
+        </div>
+        <nav>
+            <a href="loginindex.html">首頁</a>
+            <a href="store2.html">商品頁面</a>
+            <a href="board2.html">留言板</a>
+            <a href="aboutus2.html">關於我們</a>
+            <a href="login.html">登出會員</a>
+            <a href="profile.html">修改會員資料</a>
+            <a href="shopping.html">🛒購物車</a>
+        </nav>
+    </header>
+
+    <div class="content">
+      <ul>
+          <li>
+              <a href="#1">咖啡</a>
+              <ul>
+                  <li><a href="#1">多明尼加</a></li>
+                  <li><a href="#6">伊索比亞</a></li>
+                  <li><a href="#11">台灣</a></li>
+              </ul>
+          </li>
+          <li><a href="#16">咖啡包</a></li>
+          <li><a href="#21">沖泡工具</a></li>
+      </ul>
+    </div>
+
+  <article>
+      <div class="product-container">
+          <div class="product">
+            <a href="coffeebea1.html"><img src="image/1.jpg" id="1"></a>
+            <h3>紅翡咖啡豆</h3>
+            <p>多明尼加海拔最高之中央山脈Jarabacoa Cibao Altura莊園口感清爽、豐富餘韻、感受再次回甘的滋味</p>
+            <div>
+              <input type="button" value="-" class="btn" onclick="minus(0)">
+              <input type="text" value="1" class="input_sum">
+              <input type="button" value="+" class="btn" onclick="add(0)">
+              <input type="submit" value="加入購物車">
+              <h5>價格：NT450 庫存：???</h6>
+            </div>
+          </div>
+          <div class="product">
+              <img src="image/2.jpg" id="2">
+              <h3>蜜處理 PRIME級莊園咖啡豆（226G）</h3>
+              <p>多明尼加最新蜜處理咖啡；蜜處理法是介於日曬法及水洗法間的一種咖啡精製方式，蜜處理的咖啡具有很棒的甜味及果酸味的平衡，風味雖沒有日曬的咖啡濃烈，但卻更清新、香醇，並有濃郁巧克力及焦糖風味。</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(1)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(1)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：NT480 庫存：???</h6>
+              </div>
+          </div>
+          <div class="product">
+              <img src="image/3.jpg" id="3">
+              <h3>墨翠 PRIME級莊園咖啡豆</h3>
+              <p>多明尼加墨翠之咖啡生豆，採用有機方式栽植而成。口感濃郁豐富，有濃郁的巧克力香氣，渾厚但卻不澀，入口時會感到有中牧草的果酸味，隨著溫度及時間進而回甘，咖啡的口感不斷在口中變化。適合偏好有機栽植產品的您。</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(2)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(2)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：NT440 庫存：???</h6>
+              </div>
+          </div>
+          <div class="product">
+              <img src="image/4.jpg" id="4">
+              <h3>冰種 PRIME級莊園咖啡豆</h3>
+              <p>位於多明尼加海拔最高之中央山脈Jarabacoa Cibao Altura莊園所種植的咖啡豆口感清爽、豐富餘韻、感受再次回甘的滋味味</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(3)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(3)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：NT399 庫存：???</h6>
+              </div>
+          </div>
+          <div class="product">
+              <img src="image/5.jpg" id="5">
+              <h3>超級加勒比配方咖啡豆</h3>
+              <p>選用多明尼加生產的「加勒比冰種」&「加勒比墨翠」兩種阿拉比卡精品咖啡豆，採中深烘焙，口感甘甜滑順，最適合怕酸的族群享用。</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(4)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(4)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：700 庫存：???</h6>
+              </div>
+          </div>
+          <div class="product">
+              <img src="image/6.jpg" id="6">
+              <h3>西達摩 Legese Rowa Dasso</h3>
+              <p>繽紛的熱帶水果風味，但有花香的清爽口感及檸檬柑橘的酸甜滋味。</p>
+              <p>產地：伊索比亞</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(5)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(5)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：1100 庫存：???</h6>
+              </div>
+          </div>
+          <div class="product">
+              <img src="image/7.jpg" id="7">
+              <h3>紅櫻桃計畫 古吉 茉莉 水洗</h3>
+              <p>清爽的綠茶口感，淡雅的花香伴隨著香草及柑橘的甜香味。</p>
+              <p>產地：伊索比亞</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(6)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(6)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：500 庫存：???</h6>
+              </div>
+          </div>
+          <div class="product">
+              <img src="image/8.jpg" id="8">
+              <h3>西阿希 果拉康水洗廠 水洗</h3>
+              <p>花草茶的香氣及口感，有藍莓的酸甜滋味及奶油的甜香味。</p>
+              <p>產地：伊索比亞</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(7)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(7)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：800 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <img src="image/9.jpg" id="9">
+              <h3>耶加雪菲 T.O.H冠軍處理廠系列 阿朵斯</h3>
+              <p>豐富及強烈的熱帶水果口感、酸甜平衡、濃郁的果汁感，尾韻有著可可香氣。</p>
+              <p>產地：伊索比亞</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(8)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(8)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：1900 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <img src="image/10.jpg" id="10">
+              <h3>利姆 巫克羅合作社</h3>
+              <p>濃郁的茶感，有香草的甜香支撐風味，有著楓糖的甜感餘韻綿長。</p>
+              <p>產地：伊索比亞</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(9)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(9)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：500 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <img src="image/11.jpg" id="11">
+              <h3>阿里山 特富野 豆御香藝妓咖啡莊園</h3>
+              <p>檸檬清香、柑橘、茉莉花、綠茶、蜜蘋果、薑黃，茉香綠茶的清香圍繞口腔，餘韻綿長。</p>
+              <p>產地：台灣</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(10)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(10)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：3500 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <img src="image/12.jpg" id="12">
+              <h3>阿里山 樂野 基布烏咖啡莊園</h3>
+              <p>百香果、波羅蜜、鳳梨、新鮮水果茶、濃郁飽滿的水果香氣。</p>
+              <p>產地：台灣</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(11)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(11)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：1500 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <img src="image/13.jpg" id="13">
+              <h3>阿里山 樂野 鄒讚咖啡莊園</h3>
+              <p>香瓜、莓果、百香果、波羅蜜、可可、酒釀發酵，Body質感佳、層次豐富。</p>
+              <p>產地：台灣</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(12)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(12)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：1100 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <img src="image/14.jpg" id="14">
+              <h3>阿里山 特富野 豆御香藝妓咖啡莊園</h3>
+              <p>桃子、酸橙、果乾、藍莓、奶油、柔順水果的香氣、圓潤的口感。</p>
+              <p>產地：台灣</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(13)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(13)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：1900 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <img src="image/15.jpg" id="15">
+              <h3>阿里山 番路 仙井咖啡莊園</h3>
+              <p>花香、柑橘、百香果、Body圓潤飽滿、酸質乾淨明亮、甜感極佳。</p>
+              <p>產地：台灣</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(14)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(14)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：7000 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <a href="coffeebag1.html"><img src="image/16.jpg" id="16"></a>
+              <h3>哥斯大黎加 音樂家協奏曲系列</h3>
+              <p>[茶包式] 10入綜合茶包式咖啡</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(15)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(15)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：500 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <a href="coffeebag2.html"><img src="image/17.jpg" id="17"></a>
+              <h3>哥斯大黎加 音樂家協奏曲系列</h3>
+              <p>[濾掛式] 10入綜合濾掛式咖啡</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(16)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(16)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：500 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <a href="coffeebag3.html"><img src="image/18.jpg" id="18"></a>
+              <h3>衣索比亞 古吉 烏拉嘎</h3>
+              <p>[濾掛式] 單品濾掛式咖啡 日曬</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(17)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(17)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：175 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <a href="coffeebag4.html"> <img src="image/19.jpg" id="19"></a>
+              <h3>巴布亞新幾內亞 黑十字莊園</h3>
+              <p>[茶包式] 單品茶包式咖啡 水洗</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(18)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(18)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：175 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <a href="coffeebag5.html"><img src="image/20.jpg" id="20"></a>
+              <h3>瓜地馬拉 安提瓜 瑪格麗特 </h3>
+              <p>[濾掛式] 單品濾掛式咖啡 水洗</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(19)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(19)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：175 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <a href="coffeemaker1.html"><img src="image/21.jpg" id="21"></a>
+             <h3>MILA 高質感咖啡粉渣桶</h3>
+              <p>不銹鋼咖啡敲渣桶/咖啡渣桶/義式敲渣桶</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(20)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(20)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：??? 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <a href="coffeemaker2.html"><img src="image/22.jpg" id="22"></a>
+              <h3>HeyCafé Buddy定量磨豆機</h3>
+              <p>專業義式磨豆機 110V可家用 黑/白兩色</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(21)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(21)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：??? 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <a href="coffeemaker3.html"><img src="image/23.jpg" id="23"></a>
+              <h3>KALITA 日本昭和復古陶瓷高台杯</h3>
+              <p>陶瓷馬克杯 咖啡杯 200ml</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(22)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(22)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：??? 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <a href="coffeemaker4.html"><img src="image/24.jpg" id="24"></a>
+              <h3>HARIO V60 無限濾杯手沖套組</h3>
+              <p>VDMU-02T-SPS 旅行套組</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(23)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(23)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：??? 庫存：???</h6>
+              </div>
+            </div>
+            <div class="product">
+              <a href="coffeemaker5.html"><img src="image/25.jpg" id="25"></a>
+              <h3>英國 Knock ｜Aergrind 迷你手搖磨豆機</h3>
+              <p>義大利鍍鈦鋼刀盤</p>
+              <div>
+                <input type="button" value="-" class="btn" onclick="minus(24)">
+                <input type="text" value="1" class="input_sum">
+                <input type="button" value="+" class="btn" onclick="add(24)">
+                <input type="submit" value="加入購物車">
+                <h5>價格：??? 庫存：???</h6>
+              </div>
+            </div>
+      </div>
+  </article>
+
+  <footer>
+      <p class="pagetop"><a href="#top">▲回TOP</a></p> <!--TOP傳送門-->
+      <p class="copyright">本文瀏覽次數：123456<br> Copyright © 2023。本網站僅為作業之用，如有侵權敬請告知。</p>
+  </footer>
+
+  <script>
+      function minus(n){
+          var num = Number(document.getElementsByClassName("input_sum")[n].value);
+          if(num>0){
+              document.getElementsByClassName("input_sum")[n].value = num -1;
+          }
+      }
+
+      function add(n){
+          var num = Number(document.getElementsByClassName("input_sum")[n].value);
+          if(num<100){
+              document.getElementsByClassName("input_sum")[n].value = num +1;
+          }
+      }
+  </script>
+</body>
+</html>
